@@ -105,11 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				1A0E726927A3179B0015E1DB /* To_Take_AppApp.swift */,
-				1A99F7F027E7549200B3FE16 /* takeSchoolView.swift */,
-				1A0E726B27A3179B0015E1DB /* ContentView.swift */,
 				1A0E729327A319AC0015E1DB /* toDoList.swift */,
-				1A99F7F427E7C58D00B3FE16 /* FirstView.swift */,
-				1A99F7EE27E7548100B3FE16 /* takeHomeView.swift */,
+				1A99F7F627EBD70100B3FE16 /* Views */,
 				1A99F7F227E7594400B3FE16 /* Items.swift */,
 				1A0E726D27A317A10015E1DB /* Assets.xcassets */,
 				1A0E726F27A317A10015E1DB /* Preview Content */,
@@ -140,6 +137,17 @@
 				1A0E728627A317A10015E1DB /* To_Take_AppUITestsLaunchTests.swift */,
 			);
 			path = "To Take AppUITests";
+			sourceTree = "<group>";
+		};
+		1A99F7F627EBD70100B3FE16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0E726B27A3179B0015E1DB /* ContentView.swift */,
+				1A99F7F427E7C58D00B3FE16 /* FirstView.swift */,
+				1A99F7F027E7549200B3FE16 /* takeSchoolView.swift */,
+				1A99F7EE27E7548100B3FE16 /* takeHomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

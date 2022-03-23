@@ -1,5 +1,5 @@
 //
-//  takeHomeView.swift
+//  takeSchoolView.swift
 //  To Take App
 //
 //  Created by Jamie Thomson on 20/03/2022.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct takeHomeView: View {
-
+struct takeSchoolView: View {
     @StateObject var list = Items()
   //    @State var adjustableList = list.makeList()
     
     var body: some View {
         VStack {
+            Text("Take these things back to school:")
             NavigationView {
                 List {
                     ForEach(list.items, id : \.self) { item in
@@ -37,8 +37,8 @@ struct takeHomeView: View {
     }
 }
 
-struct takeHomeView_Previews: PreviewProvider {
+struct takeSchoolView_Previews: PreviewProvider {
     static var previews: some View {
-        takeHomeView()
+        takeSchoolView()
     }
 }
