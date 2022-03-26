@@ -26,8 +26,8 @@ class Items : ObservableObject {
         self.items.move(fromOffsets: indices, toOffset: newOffset)
     }
     
-    func addItem() {
-        self.items.append("boys")
+    func addItem(name : String) {
+        self.items.append(name)
     }
     
 }

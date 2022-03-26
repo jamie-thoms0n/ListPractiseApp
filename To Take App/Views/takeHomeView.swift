@@ -15,6 +15,7 @@ struct takeHomeView: View {
     var body: some View {
         VStack {
             Text("Take these things back home:")
+                .bold()
             NavigationView {
                 List {
                     ForEach(list.items, id : \.self) { item in
@@ -28,9 +29,10 @@ struct takeHomeView: View {
                     leading:
                         EditButton(),
                     trailing:
-                        Button("Add", action: {
-                            list.addItem()
+                        NavigationLink(destination :addItemView(), label:{
+                            Text("Add")
                         })
+                        
                 )
                 
             }

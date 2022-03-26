@@ -14,6 +14,7 @@ struct takeSchoolView: View {
     var body: some View {
         VStack {
             Text("Take these things back to school:")
+                .bold()
             NavigationView {
                 List {
                     ForEach(list.items, id : \.self) { item in
@@ -28,7 +29,7 @@ struct takeSchoolView: View {
                         EditButton(),
                     trailing:
                         Button("Add", action: {
-                            list.addItem()
+                            addItemView()
                         })
                 )
                 

@@ -19,6 +19,7 @@
 		1A99F7F127E7549200B3FE16 /* takeSchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99F7F027E7549200B3FE16 /* takeSchoolView.swift */; };
 		1A99F7F327E7594400B3FE16 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99F7F227E7594400B3FE16 /* Items.swift */; };
 		1A99F7F527E7C58D00B3FE16 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99F7F427E7C58D00B3FE16 /* FirstView.swift */; };
+		1A99F7F827EF2DE400B3FE16 /* addItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99F7F727EF2DE400B3FE16 /* addItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1A99F7F027E7549200B3FE16 /* takeSchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takeSchoolView.swift; sourceTree = "<group>"; };
 		1A99F7F227E7594400B3FE16 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		1A99F7F427E7C58D00B3FE16 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		1A99F7F727EF2DE400B3FE16 /* addItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				1A99F7F427E7C58D00B3FE16 /* FirstView.swift */,
 				1A99F7F027E7549200B3FE16 /* takeSchoolView.swift */,
 				1A99F7EE27E7548100B3FE16 /* takeHomeView.swift */,
+				1A99F7F727EF2DE400B3FE16 /* addItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				1A99F7EF27E7548100B3FE16 /* takeHomeView.swift in Sources */,
 				1A0E729427A319AC0015E1DB /* toDoList.swift in Sources */,
 				1A99F7F327E7594400B3FE16 /* Items.swift in Sources */,
+				1A99F7F827EF2DE400B3FE16 /* addItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
