@@ -29,9 +29,13 @@ struct takeHomeView: View {
                     leading:
                         EditButton(),
                     trailing:
-                        NavigationLink(destination :addItemView(), label:{
-                            Text("Add")
-                        })
+//                        NavigationLink(
+//                            destination :addItemView(),
+//                            label: { Text("Add")}
+//                        )
+                    Button("add", action : {
+                        list.addItem(name: "kevin")
+                    })
                         
                 )
                 
