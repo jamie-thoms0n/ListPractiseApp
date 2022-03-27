@@ -2,15 +2,18 @@
 //  takeHomeView.swift
 //  To Take App
 //
-//  Created by Jamie Thomson on 20/03/2022.
+//  Created by Jamie Thomson on 26/03/2022.
 //
 
 import SwiftUI
 
-struct takeHomeView: View {
 
+struct takeHomeView: View {
     @StateObject var list = Items()
-  //    @State var adjustableList = list.makeList()
+//    @State var toggle = false
+//    @State var enteredName : String = ""
+    
+//  @State var adjustableList = list.makeList()
     
     var body: some View {
         VStack {
@@ -29,15 +32,17 @@ struct takeHomeView: View {
                     leading:
                         EditButton(),
                     trailing:
-//                        NavigationLink(
-//                            destination :addItemView(),
-//                            label: { Text("Add")}
-//                        )
-                    Button("add", action : {
-                        list.addItem(name: "kevin")
-                    })
-                        
+                        NavigationLink(
+                            destination :addItemView(),
+                            label: { Text("Add")}
+                        )
                 )
+                
+//                    if toggle == true {
+//                        TextField("Enter the your new item to remember", text: $enteredName)
+//                            .padding()
+//                            .background(Color.gray.opacity(0.3))
+//                    }
                 
             }
         }

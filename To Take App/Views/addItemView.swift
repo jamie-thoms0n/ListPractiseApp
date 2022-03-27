@@ -22,15 +22,15 @@ struct addItemView: View {
 //                            if isBegin {
 //                                list.addItem(name : enteredName)
 //                            }
-//                        }
                         }
+                        
             )
                 .padding()
                 .background(Color.gray.opacity(0.3))
                 //.textFieldStyle(RoundedBorderTextFieldStyle())
-            ForEach(list.items, id : \.self) { item in
-                Text(item.capitalized)
-            }
+//            ForEach(list.items, id : \.self) { item in
+//                Text(item.capitalized)
+//            }
             
 
              
@@ -38,6 +38,7 @@ struct addItemView: View {
 //            Button("Done", action: {
 //                list.addItem(name : enteredName)
 //            })
+        
         }
         
     }

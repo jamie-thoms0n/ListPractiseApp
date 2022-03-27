@@ -17,7 +17,7 @@ struct takeSchoolView: View {
                 .bold()
             NavigationView {
                 List {
-                    ForEach(list.items, id : \.self) { item in
+                    ForEach(list.self.items, id : \.self) { item in
                         Text(item.capitalized)
                     }
                     .onDelete(perform: { indexSet in
@@ -28,9 +28,10 @@ struct takeSchoolView: View {
                     leading:
                         EditButton(),
                     trailing:
-                        Button("Add", action: {
-                            addItemView()
-                        })
+                        NavigationLink(
+                            destination :addItemView(),
+                            label: { Text("Add")}
+                        )
                 )
                 
             }
