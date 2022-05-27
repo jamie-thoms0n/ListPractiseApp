@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct takeHomeView: View {
-    @StateObject var list = Items()
+    @StateObject var list: Items
 //    @State var toggle = false
 //    @State var enteredName : String = ""
     
@@ -33,7 +33,7 @@ struct takeHomeView: View {
                         EditButton(),
                     trailing:
                         NavigationLink(
-                            destination :addItemView(),
+                            destination :addItemView(list: list, from: "Home"),
                             label: { Text("Add")}
                         )
                 )
@@ -51,6 +51,6 @@ struct takeHomeView: View {
 
 struct takeHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        takeHomeView()
+        takeHomeView(list: Items())
     }
 }

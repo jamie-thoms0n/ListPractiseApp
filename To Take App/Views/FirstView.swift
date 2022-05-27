@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct FirstView: View {
-//    @State var thisClass = toDoList()
+    @StateObject var items = Items()
     var body: some View {
         
             TabView{
-                takeHomeView()
+                takeHomeView(list: items)
                     .tabItem{
                         Label("Home", systemImage : "house")
                     }
-                takeSchoolView()
+                takeSchoolView(list: items)
                     .tabItem{
                         Label("School", systemImage : "building.columns")
                     }

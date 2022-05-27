@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct addItemView: View {
-    @StateObject var list = Items()
+    @StateObject var list: Items
     @State var enteredName : String = ""
+    var from: String
     var commit : Bool = false
     var body: some View {
         VStack() {
+//            List {
+//                ForEach(list.self.items, id : \.self) { item in
+//                    Text(item.capitalized)
+//                }
+            }
             TextField("Enter the your new item to remember",
                       text: $enteredName,
                       onCommit: {
-                        list.addItem(name : enteredName)
+                        if from == "Home" {
+                            list.addItem(name : enteredName)
+                        } else {
+                            list.addItemTwo(name : enteredName)
+                        }
                         enteredName = ""
 //                      onEditingChanged: { (isBegin) in
 //                            if isBegin {
@@ -39,14 +49,13 @@ struct addItemView: View {
 //                list.addItem(name : enteredName)
 //            })
         
-        }
-        
     }
     
 }
+    
 
 struct addItemView_Previews: PreviewProvider {
     static var previews: some View {
-        addItemView()
+        addItemView(list: Items(), from: "Home")
     }
 }
